@@ -1,0 +1,6 @@
+# sudo: auth account password session
+auth	sufficient	pam_yubico.so mode=challenge-response
+auth       required       pam_opendirectory.so
+account    required       pam_permit.so
+password   required       pam_deny.so
+session    required       pam_permit.so

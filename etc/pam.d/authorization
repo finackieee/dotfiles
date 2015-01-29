@@ -1,0 +1,6 @@
+# authorization: auth account
+auth       required     pam_yubico.so mode=challenge-response debug
+auth       optional       pam_krb5.so use_first_pass use_kcminit
+auth       optional       pam_ntlm.so use_first_pass
+auth       required       pam_opendirectory.so use_first_pass nullok
+account    required       pam_opendirectory.so
