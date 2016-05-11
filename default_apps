@@ -1,0 +1,34 @@
+cd /Applications/
+
+#Delete Safari
+sudo rm -rf Safari.app/
+
+#Delete Mail
+sudo rm -rf Mail.app/
+
+#Delete FaceTime
+sudo rm -rf FaceTime.app/
+
+#Delete QuickTime Player
+sudo rm -rf QuickTime\ Player.app/
+
+#Delete Stickies
+sudo rm -rf Stickies.app/
+
+#Delete Chess
+sudo rm -rf Chess.app/
+
+#Delete Photo Booth
+sudo rm -rf Photo\ Booth.app
+
+#Delete iTunes
+sudo rm -rf iTunes.app/
+
+#Delete iBooks
+sudo rm -rf iBooks.app/
+
+#Delete Messages
+sudo rm -rf Messages.app/
+
+#Delete Photos
+sudo rm -rf Photos.app/

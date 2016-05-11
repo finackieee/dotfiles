@@ -1,0 +1,29 @@
+#Install yubikey tools
+brew install libyubikey pam_yubico libusb-compat libgpg-error libgcrypt libassuan libksba
+brew cask install yubikey-personalization-gui yubikey-neo-manager
+
+##Yubikey PAM Auth###
+
+#Open root shell
+sudo su -
+
+#Move auth module to correct directory
+sudo mv /usr/local/lib/security/pam_yubico.so /usr/lib/pam/
+
+#Add Yubikey Module to sudo to supplement password
+#Create file to store challenge-response
+mkdir -m0700 -p ~/.yubico
+
+#Create challenge-response
+ykpamcfg -2
+
+#Add line to top of /etc/pam.d/sudo
+auth	sufficient	pam_yubico.so mode=challenge-response
+
+#Add Yubikey Module to /etc/pam.d/screensaver and /etc/pam.d/authorization
+#Use required or sufficient to allow or disallow password only login
+auth	required	pam_yubico.so mode=challenge-response
+
+
+
+#####

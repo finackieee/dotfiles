@@ -1,0 +1,37 @@
+#Install xcode command tools from App Store
+xcode-select --install
+
+#Install Homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+#Test brew
+brew doctor
+
+#Install Cask
+brew install caskroom/cask/brew-cask
+
+#Install littlesnitch
+brew cask install little-snitch
+
+#Install Gas mask
+brew cask install gas-mask
+
+#Install Alfred
+brew cask install alfred
+
+#Link Alfred and Brew
+brew cask alfred link   #or manually add /opt/homebrew-cask/Caskroom as a Search Scope in Alfred's preferences
+
+#Install oh-my-Zsh
+curl -L http://install.ohmyz.sh | sh
+
+#Install iterm and tmux
+brew cask install iterm2
+brew tmux reattach-to-user-namespace
+
+#Install Monolinugal to remove extra languages
+brew cask install monolingual
+
+#Install tinkertool, bettertouchtool, bartender, gpg, firefox, adium, textmate, sourcetree, eclipse-platform, java, xquartz, dashlane, xtrafinder, the-unarchiver, onyx, sublime-text, vlc, transmission
+
+#Install VMWARE Fusion
