@@ -1,0 +1,12 @@
+#Sublime3
+apt-get install flake8
+
+#Install PackageControl
+https://packagecontrol.io/installation
+
+#Install SublimeLinter via Package Control
+http://www.sublimelinter.com/en/latest/installation.html#installing-via-pc
+
+#Install Linters
+#install sublimelinter-flake8
+http://www.sublimelinter.com/en/latest/installation.html#linter-plugins
